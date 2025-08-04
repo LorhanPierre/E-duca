@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-destaque: #245D51;
+    --cor-secundaria: #CB8461;
+    --cor-texto-claro: #2C2C2C;
+    --cor-de-fundo: #F7FAF9;
+    --cor-clara: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+.versao-computador{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+}
