@@ -12,33 +12,9 @@
     --cor-clara: #FFFFFF;
 }
 
-.cabin-condensed-regular {
-  font-family: "Cabin Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cabin-condensed-medium {
-  font-family: "Cabin Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.cabin-condensed-semibold {
-  font-family: "Cabin Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.cabin-condensed-bold {
-  font-family: "Cabin Condensed", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
 body{
-    font-family: "Cabin Condensed",sans-serif;
+    font-family: "Cabin",sans-serif;
+    background-color: var(--cor-de-fundo);
 }
 
 .versao-computador{
@@ -48,37 +24,184 @@ body{
 header{
     background-color: var(--cor-destaque);
     color: var(--cor-clara);
-    font-family: "Cabin Condensed",sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
 }
 
 .versao-celular{
-    font-size: 24px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 86%;
+    height: 9.5rem;
+    width: 87%;
     margin: 0 auto;
-    padding-top: 3.3rem;
+    justify-content:space-between ;
+    align-items:center;
 }
 
-img{
+.tela-inicial{
+    background-color: var(--cor-destaque);
+    background-image: url("/recursos/Fundo-celular/fundo-tela-inicial-celular.png");
+    background-repeat: no-repeat;
+    background-position:0 26.9vh;
+    height: 119.5vh;
+    position: absolute;
+}
+
+.conteudo-tela-inicial{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.notificacao{
+    display: flex;
+    align-self: center;
+    color: var(--cor-clara);
+    font-size: 13.96px;
+    height: 33px;
+}
+
+.conteudo-notificacao p {
+    font-weight:100;
+}
+
+.fundo-notificacao{
+    background-color: #F2E7DB;
+    height: 33px;
+    border-radius: 50rem;
+    width: 17.8rem;
+    opacity: 50%;
+    position:absolute;
+    z-index: 0;
+}
+
+.conteudo-notificacao{
+    display: flex;
+    align-items:center;
+    z-index: 99;
+    gap: 5.5px;
+    margin-bottom: 1px;
+}
+
+.marcacao-notificacao{
+    display:flex ;
+    margin-left: 0.3em;
+    margin-top: 1px;
+    background-color: var(--cor-secundaria);
+    width: 48px;
+    height: 24px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcacao-notificacao p{
+    margin-bottom: 1px;
+    font-weight: 100;
+}
+
+.titulo-tela-inicial{
+    color:var(--cor-clara);
+    margin-top: 2.2vh;
+    font-size: 1.83em ;
+    line-height: 7.65vh;
+    letter-spacing: 0.3px;
+}
+
+.titulo-tela-inicial h2{
+    font-weight: 600;
+}
+
+.texto-tela-inicial p{
+    width: 90%;
+    margin-top: 1.8vh;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--cor-de-fundo);
+    opacity: 50%;
+    font-weight: 100;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    color: var(--cor-clara);
+    margin-top: 4.5vh;
+}
+
+.botoes img{
+    max-width: 90%;
+}
+
+.botao-iniciar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 50px;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px ;
+}
+
+.botao-aprenda-mais{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap:10px;
+}
+
+.imagem-tela-inicial{
+    max-width: 100%;
+    margin-top: 4.2vh;
+    margin-left:-2vw;
+    height: 50vh;
+}
+
+.imagem-tela-inicial img{
+    display: flex;
+}
+
+.imagem-sessao-informacoes img{
     max-width: 100%;
 }
 
-.logo{
+.parcerias{
     display: flex;
-    align-items:center;
-    gap:0.6rem;
+    margin: 0 auto;
+    background-color: var(--cor-clara);
+    width: 91%;
+    height: 42.5vh;
+    position: relative; 
+    top: 110vh;
+    border-radius: 8px;
 }
 
-.simbolo-e{
-    display:flex;
-    width: 35px;
-    height: 35px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    background-color: var(--cor-secundaria);
+.conteudo-parcerias{
+    margin-top: 1.68rem;
+    margin-left: 1.6rem;
+    color: var(--cor-texto-claro);
+    font-size: 14px;
+}
+
+.informacoes-parcerias{
+    gap:12px;
+}
+
+.avaliacoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap:12px;
+}
+
+.estrelas{
+    display: flex;
+    justify-content: space-between;
+    width: 6.9rem;
+    max-width: 120%;
+}
+
+.empresas{
+    text-align: center;
+
+}
+
+.informacoes{
+    margin-top: 114vh;
 }
