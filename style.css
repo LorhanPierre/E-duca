@@ -4,123 +4,204 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
 :root{
     --cor-destaque: #245D51;
     --cor-secundaria: #CB8461;
     --cor-texto-claro: #2C2C2C;
     --cor-de-fundo: #F7FAF9;
     --cor-clara: #FFFFFF;
-    --cor-para-transparencia: #F2E7DB; 
 }
 
 body{
-    background-color: var(--cor-de-fundo);
     font-family: "Cabin",sans-serif;
+    background-color: var(--cor-de-fundo);
 }
 
-ul li{
-    list-style: none;
+.versao-computador{
+    display: none;
 }
 
 header{
     background-color: var(--cor-destaque);
-    height: 17vh;
+    color: var(--cor-clara);
 }
 
-.header-mobile{
+.versao-celular{
     display: flex;
+    height: 9.5rem;
     width: 87%;
-    height: 17vh;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items:center;
 }
 
-.header-desktop{
-    display: none;
-}
-
-.hero{
+.tela-inicial{
     background-color: var(--cor-destaque);
-    height: 1033px;
+    background-image: url("/recursos/Fundo-celular/fundo-tela-inicial-celular.png");
+    background-repeat: no-repeat;
+    background-position:0 26.9vh;
+    height: 119.5vh;
+    position: absolute;
 }
 
-.inner-hero{
-    width:87%;
+.conteudo-tela-inicial{
+    width: 87%;
     margin: 0 auto;
 }
 
-.notification{
+.notificacao{
     display: flex;
-    font-size: 13px;
-    gap:2vw;
-    align-items: center;
+    align-self: center;
     color: var(--cor-clara);
-    padding: 1vh;
+    font-size: 13.96px;
+    height: 33px;
 }
 
-.emphasys{
+.conteudo-notificacao p {
+    font-weight:100;
+}
+
+.fundo-notificacao{
+    background-color: #F2E7DB;
+    height: 33px;
+    border-radius: 50rem;
+    width: 17.8rem;
+    opacity: 50%;
+    position:absolute;
+    z-index: 0;
+}
+
+.conteudo-notificacao{
     display: flex;
+    align-items:center;
+    z-index: 99;
+    gap: 5.5px;
+    margin-bottom: 1px;
+}
+
+.marcacao-notificacao{
+    display:flex ;
+    margin-left: 0.3em;
+    margin-top: 1px;
     background-color: var(--cor-secundaria);
-    margin-left: 1.8vw;
-    width: 13vw;
+    width: 48px;
     height: 24px;
+    border-radius: 25px;
     justify-content: center;
     align-items: center;
-    border-radius: 24px;
-    position: relative;
 }
 
-.background-notification{
-    background-color: var(--cor-para-transparencia);
-    position:absolute;
+.marcacao-notificacao p{
+    margin-bottom: 1px;
+    font-weight: 100;
+}
+
+.titulo-tela-inicial{
+    color:var(--cor-clara);
+    margin-top: 2.2vh;
+    font-size: 1.83em ;
+    line-height: 7.65vh;
+    letter-spacing: 0.3px;
+}
+
+.titulo-tela-inicial h2{
+    font-weight: 600;
+}
+
+.texto-tela-inicial p{
+    width: 90%;
+    margin-top: 1.8vh;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--cor-de-fundo);
     opacity: 50%;
-    width: 75em;
-    height: 33px;
-    border-radius: 35px;
+    font-weight: 100;
 }
 
-@media (min-width:1440px){
-    
-    .header-mobile{
-        display: none;
-    }
+.botoes{
+    display: flex;
+    align-items: center;
+    color: var(--cor-clara);
+    margin-top: 4.5vh;
+}
 
-    .header-desktop{
-        display: grid;
-        height: 17vh;
-        grid-template-columns: 1fr 2fr 1fr;
-        align-items: center;
-        justify-items: center;
-        color:var(--cor-clara);
-        gap:3vw;
-        font-size: 16px;
-    }
+.botoes img{
+    max-width: 90%;
+}
 
-    .desktop-menu ul{
-        display: flex;
-        gap:2vw;
-    }
+.botao-iniciar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 50px;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px ;
+}
 
-    .buttons{
-        display: flex;
-        gap:2vh;
-    }
+.botao-aprenda-mais{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap:10px;
+}
 
-    .button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 97px;
-        height: 55px;
-        border-radius: 8px;
-    }
+.imagem-tela-inicial{
+    max-width: 100%;
+    margin-top: 4.2vh;
+    margin-left:-2vw;
+    height: 50vh;
+}
 
-    .opacity{
-        position: absolute;
-        background-color: var(--cor-para-transparencia);
-        opacity: 50%;
-    }
+.imagem-tela-inicial img{
+    display: flex;
+}
+
+.imagem-sessao-informacoes img{
+    max-width: 100%;
+}
+
+.parcerias{
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--cor-clara);
+    width: 91%;
+    height: 42.5vh;
+    position: relative; 
+    top: 110vh;
+    border-radius: 8px;
+}
+
+.conteudo-parcerias{
+    margin-top: 1.68rem;
+    margin-left: 1.6rem;
+    color: var(--cor-texto-claro);
+    font-size: 14px;
+}
+
+.informacoes-parcerias{
+    gap:12px;
+}
+
+.avaliacoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap:12px;
+}
+
+.estrelas{
+    display: flex;
+    justify-content: space-between;
+    width: 6.9rem;
+    max-width: 120%;
+}
+
+.empresas{
+    text-align: center;
+
+}
+
+.informacoes{
+    margin-top: 114vh;
 }
