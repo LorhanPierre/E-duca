@@ -322,9 +322,14 @@ header{
 .cursos{
     width: 87%;
     margin: 0 auto;
+    color: var(--cor-texto-claro);
 }
 
 .Valores{
     width: 87%;
     margin: 0 auto;
+}
+
+.titulo-cursos{
+    margin-top: 10.5vh;
 }
