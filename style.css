@@ -12,6 +12,11 @@
     --cor-clara: #FFFFFF;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 body{
     font-family: "Cabin",sans-serif;
     background-color: var(--cor-de-fundo);
@@ -155,10 +160,8 @@ header{
 
 .imagem-tela-inicial img{
     display: flex;
-}
-
-.imagem-sessao-informacoes img{
-    max-width: 100%;
+    bottom: 0.vh;
+    position: absolute;
 }
 
 .parcerias{
@@ -170,24 +173,30 @@ header{
     position: relative; 
     top: 110vh;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .conteudo-parcerias{
     margin-top: 1.68rem;
     margin-left: 1.6rem;
-    color: var(--cor-texto-claro);
+    margin-right: 1.6rem;
     font-size: 14px;
 }
 
-.informacoes-parcerias{
-    gap:12px;
+.conteudo-parcerias p{
+    color: var(--cor-texto-claro);
+    opacity: 50%;
+}
+
+.informacoes-parcerias p{
+    margin-top: 2vh;
 }
 
 .avaliacoes{
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
-    gap:12px;
+    gap:2vh;
 }
 
 .estrelas{
@@ -198,10 +207,124 @@ header{
 }
 
 .empresas{
-    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3vw;
+    row-gap: 3vw;
+    padding-top: 5vh;
+    margin: 0 auto;
+}
 
+.duolingo{
+    max-width: 100%;
+    margin-left: 4vw;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.plural{
+    max-width: 40%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+}
+
+.talent{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    align-self:center;
+}
+
+.udemy{
+    max-width: 90%;
+    margin-left: 4vw;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    align-self: center;
+}
+
+.coursera{
+    margin-left: 3vw;
+    max-width: 80%;
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-start: 1;
+    align-self: center;
 }
 
 .informacoes{
-    margin-top: 114vh;
+    width: 87%;
+    padding-top: 120vh;
+    margin: 0 auto;
+}
+
+.texto-informacoes{
+    color: var(--cor-texto-claro);
+}
+
+.texto-informacoes h2{
+    margin-top: 6vh;
+    line-height: 5vh;
+}
+
+.texto-informacoes p{
+    margin-top:2.5vh;
+    line-height: 3.2vh;
+    opacity: 50%;
+}
+
+.fundo-icones{
+    opacity: 10%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-secundaria);
+    border-radius: 50px;
+}
+
+.icones{
+    color: var(--cor-texto-claro);
+    position: relative;
+    display: flex;
+    align-items: center;
+    right:8.1vw;
+    gap:7vw;
+}
+
+.secao-icones{
+    display: flex;
+    margin-top: 1.9vh;
+}
+
+.topicos{
+    margin-top: 4vh;
+}
+
+.icones img{
+    max-width: 12%;
+}
+
+.botao-explorar{
+    display: flex;
+    margin-top: 5vh;
+    color:var(--cor-clara);
+    width: 145px;
+    height: 50px;
+    background-color: var(--cor-destaque);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.Valores{
+    width: 87%;
+    margin: 0 auto;
 }
