@@ -333,3 +333,28 @@ header{
 .titulo-cursos{
     margin-top: 10.5vh;
 }
+
+.fundo{
+    width: 54px;
+    height: 54px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10vw;
+    position: relative;
+}
+
+.setas{
+    display:flex;
+}
+
+.fundo-seta{
+    display: flex;
+    gap:4vw;
+}
+
+.esquerdo{
+    background-color: #F3F3F3;
+}
+
+.direito{
+    box-shadow: 1px 1px 1px 1px var(--cor-secundaria);
+}
