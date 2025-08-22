@@ -28,3 +28,11 @@ git clone https://github.com/seu-usuario/e-duca.git
 
 
 Abra o arquivo index.html diretamente em qualquer navegador.
+
+✅ Funcionalidades
+
+ Estrutura semântica em HTML5
+
+ Estilização com CSS3
+
+ Responsividade completa
